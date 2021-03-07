@@ -1,0 +1,15 @@
+<div class="row">
+  <div><h1 class="text-center">Lista de Cursos</h1></div>
+  <div classe="col-md-6 form-group">
+    <label for="nomeInput">Curso</label>
+    <input type="text" class="form-control" id="nomeInput" #nomeInput>
+  </div>
+  <div classe="col-md-6 form-group">
+    <label for="cargaHorariaInput">Carga horária </label>
+    <input type="text" class="form-control" id="cargaHorariaInput" #cargaHorariaInput>
+  </div>
+</div>
+<br>
+<div class="row">
+  <button (click)="adicionar(nomeInput.value, cargaHorariaInput.value)" class="btn btn-primary btn-block" type="button">Cadastrar</button>
+</div>
